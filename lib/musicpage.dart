@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+// import 'package:marquee/marquee.dart';
 
 class MusicPage extends StatefulWidget {
   const MusicPage({super.key});
@@ -29,10 +30,15 @@ class _MusicPageState extends State<MusicPage> {
                     fontFamily: "GreatVibes",
                 ),
               ),
-              actions: const [
-                Icon(Icons.more_vert),
+              actions: const[
+                Icon(
+                  Icons.more_vert,
+                ),
               ],
-              leading: const Icon(Icons.queue_music_rounded),
+              leading: const
+                Icon(
+                    Icons.queue_music_rounded
+                ),
             ),
 
             Padding(
@@ -72,31 +78,64 @@ class _MusicPageState extends State<MusicPage> {
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
+                            Text(
+                              "Playlist",
+                              style: TextStyle(
+                                color: Colors.white,
+                                  fontSize: 10,
+                                  fontFamily: "Kalam",
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            SizedBox(
 
-
-                            // Text(
-                            //   "Welcome",
-                            //   style: TextStyle(
-                            //     fontSize: 15,
-                            //     color: Colors.white,
-                            //     fontWeight: FontWeight.bold,
-                            //   ),
-                            // ),
-
-
+                            ),
                           ],
                         ),
                       ),
                     ],
                   ),
 
-                  const Icon(
-                    Icons.search,
-                    color: Colors.white,
+                  IconButton(onPressed: () {},
+                    icon: const Icon(
+                      Icons.volume_up,
+                      color: Colors.white,
+                    ),
                   ),
                 ],
               ),
             ),
+
+
+
+            Padding(padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 5),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(10.0),
+                    child: Container(
+                      alignment: Alignment.centerLeft,
+                      constraints: const BoxConstraints(
+                        maxWidth: 340,
+                        maxHeight: 90,
+                      ),
+                      color: Colors.white,
+                      child: Padding(
+                        padding: const EdgeInsets.fromLTRB(1, 5, 5, 5),
+                        child: Image.asset(
+                          "assets/images/car1.png",
+                          height: 100,
+                          width: 100,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+
 
 
             Padding(
@@ -158,6 +197,92 @@ class _MusicPageState extends State<MusicPage> {
               ),
             ),
 
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 5),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(10.0),
+                    child: Container(
+                      alignment: Alignment.centerLeft,
+                      constraints: const BoxConstraints(
+                        maxWidth: 340,
+                        maxHeight: 90,
+                      ),
+                      color: Colors.white,
+                      child: Padding(
+                        padding: const EdgeInsets.fromLTRB(1, 5, 5, 5),
+                        child: Image.asset(
+                          "assets/images/car1.png",
+                          height: 100,
+                          width: 100,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 5),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(10.0),
+                    child: Container(
+                      alignment: Alignment.centerLeft,
+                      constraints: const BoxConstraints(
+                        maxWidth: 340,
+                        maxHeight: 90,
+                      ),
+                      color: Colors.white,
+                      child: Padding(
+                        padding: const EdgeInsets.fromLTRB(1, 5, 5, 5),
+                        child: Image.asset(
+                          "assets/images/car1.png",
+                          height: 100,
+                          width: 100,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 5),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(10.0),
+                    child: Container(
+                      alignment: Alignment.centerLeft,
+                      constraints: const BoxConstraints(
+                        maxWidth: 340,
+                        maxHeight: 90,
+                      ),
+                      color: Colors.white,
+                      child: Padding(
+                        padding: const EdgeInsets.fromLTRB(1, 5, 5, 5),
+                        child: Image.asset(
+                          "assets/images/car1.png",
+                          height: 100,
+                          width: 100,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
 
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 5),
@@ -195,3 +320,4 @@ class _MusicPageState extends State<MusicPage> {
     );
   }
 }
+
