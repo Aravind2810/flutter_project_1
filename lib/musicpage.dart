@@ -23,8 +23,16 @@ class _MusicPageState extends State<MusicPage> {
             AppBar(
               title: const Text(
                   "Music Page",
-                style: TextStyle(fontWeight: FontWeight.bold),
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 20,
+                    fontFamily: "GreatVibes",
+                ),
               ),
+              actions: const [
+                Icon(Icons.more_vert),
+              ],
+              leading: const Icon(Icons.queue_music_rounded),
             ),
 
             Padding(
@@ -102,58 +110,76 @@ class _MusicPageState extends State<MusicPage> {
                     child: Container(
                       alignment: Alignment.centerLeft,
                       constraints: const BoxConstraints(
-                        maxWidth: 390,
-                        maxHeight: 90,
-                      ),
-                      color: Colors.white,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-
-
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 5),
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(10.0),
-                    child: Container(
-                      alignment: Alignment.centerLeft,
-                      constraints: const BoxConstraints(
-                        maxWidth: 390,
-                        maxHeight: 90,
-                      ),
-                      color: Colors.white,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-
-
-            Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 5),
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.center,
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  ClipRRect(
-                    borderRadius: BorderRadius.circular(10.0),
-                    child: Container(
-                      alignment: Alignment.centerLeft,
-                      constraints: const BoxConstraints(
-                        maxWidth: 390,
+                        maxWidth: 340,
                         maxHeight: 90,
                       ),
                       color: Colors.white,
                       child: Padding(
-                        padding: const EdgeInsets.fromLTRB(5, 5, 5, 5),
+                        padding: const EdgeInsets.fromLTRB(1, 5, 5, 5),
                         child: Image.asset(
                           "assets/images/car1.png",
+                          height: 100,
+                          width: 100,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+
+
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 5),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(10.0),
+                    child: Container(
+                      alignment: Alignment.centerLeft,
+                      constraints: const BoxConstraints(
+                        maxWidth: 340,
+                        maxHeight: 90,
+                      ),
+                      color: Colors.white,
+                      child: Padding(
+                        padding: const EdgeInsets.fromLTRB(1, 5, 5, 5),
+                        child: Image.asset(
+                          "assets/images/car1.png",
+                          height: 100,
+                          width: 100,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+
+
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 5),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(10.0),
+                    child: Container(
+                      alignment: Alignment.centerLeft,
+                      constraints: const BoxConstraints(
+                        maxWidth: 340,
+                        maxHeight: 90,
+                      ),
+                      color: Colors.white,
+                      child: Padding(
+                        padding: const EdgeInsets.fromLTRB(1, 5, 5, 5),
+                        child: Image.asset(
+                          "assets/images/car1.png",
+                          height: 100,
+                          width: 100,
                         ),
                       ),
                     ),
