@@ -25,6 +25,7 @@ void main() {
       'login_view':(context) => const LoginView(),
       'music_page':(context) => const MusicPage(),
     },
+    home: MusicPage(),
   );
   runApp(app);
 }
